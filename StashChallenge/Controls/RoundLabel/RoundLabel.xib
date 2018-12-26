@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoundLabel" customModule="StashChallenge" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="n9o-Sn-nC0" id="nIj-ol-CXZ"/>
+                <outlet property="titleLabel" destination="NbX-lB-sl9" id="1II-tE-Jri"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d3I-e9-ph8">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-lB-sl9">
+                    <rect key="frame" x="68.5" y="10" width="33.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="rtC-gc-hyE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n9o-Sn-nC0">
+                    <rect key="frame" x="71" y="36" width="28" height="53"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ieJ-RT-DNd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="n9o-Sn-nC0" firstAttribute="top" secondItem="NbX-lB-sl9" secondAttribute="bottom" constant="5" id="25f-Qh-7Xp"/>
+                <constraint firstItem="Ctc-ah-k72" firstAttribute="bottom" secondItem="n9o-Sn-nC0" secondAttribute="bottom" constant="10" id="8Ie-KG-yf2"/>
+                <constraint firstItem="NbX-lB-sl9" firstAttribute="centerX" secondItem="d3I-e9-ph8" secondAttribute="centerX" id="K5M-AY-fJL"/>
+                <constraint firstItem="n9o-Sn-nC0" firstAttribute="centerX" secondItem="d3I-e9-ph8" secondAttribute="centerX" id="fXW-9P-aIO"/>
+                <constraint firstItem="NbX-lB-sl9" firstAttribute="top" secondItem="Ctc-ah-k72" secondAttribute="top" constant="10" id="w42-3c-eRx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Ctc-ah-k72"/>
+            <point key="canvasLocation" x="233.59999999999999" y="-252.32383808095955"/>
+        </view>
+    </objects>
+</document>
